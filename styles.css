@@ -22,11 +22,8 @@ html {
     flex-shrink: 1;
 }
 .square {
-    background-color: lightgray;
     flex-grow: 1;
     flex-shrink: 1;
-}
-
-.color {
-    background-color: black;
+    border-style: dashed;
+    border-width: 1px;
 }
