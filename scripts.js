@@ -1,5 +1,6 @@
 let size;
 const container = document.getElementById('container');
+const reset = document.querySelector('#reset');
 
 function grid(size = 16) {
     for (i = 0; i < size; i++) {
@@ -18,5 +19,17 @@ function grid(size = 16) {
     }
 };
 
+function colorChange(color = 'blue') {
+    const hover = container.addEventListener('mouseover', function(e){
+        e.target.style.background = color;
+        console.log(e);
+    })
+}
 
-grid(32);
+reset.addEventListener('click', function(e) {
+    size = prompt('What size would you like your grid?');
+    grid(size);
+})
+
+grid();
+colorChange();

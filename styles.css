@@ -4,6 +4,10 @@ html {
     padding: 0;
 }
 
+#reset {
+    margin-bottom: 20px;
+}
+
 #container {
     max-width: 800px;
     height: 800px;
@@ -18,7 +22,11 @@ html {
     flex-shrink: 1;
 }
 .square {
-    background-color: red;
+    background-color: lightgray;
     flex-grow: 1;
     flex-shrink: 1;
+}
+
+.color {
+    background-color: black;
 }
